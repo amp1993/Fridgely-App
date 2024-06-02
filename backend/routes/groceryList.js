@@ -128,7 +128,7 @@ router.patch("/:username/:item", ensureCorrectUserOrAdmin, async function (req, 
       }
 
 
-      const item = await Items.updateItem(productName, data, username);
+      const item = await Items.updateItem(existingItem.productName, data, username);
       return res.json({ item });
 
     } else {
