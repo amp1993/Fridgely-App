@@ -1,0 +1,61 @@
+.cards-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recipe-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 250px;
+    margin: 10px; 
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.recipe-content {
+    padding: 20px;
+}
+
+.recipe-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.ingredient-count, .fridge-item-count {
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.no-results {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+.loading-message{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}

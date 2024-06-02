@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="homepage-container"
+  >
+    <section
+      class="homepage-content"
+    >
+      <div
+        class="homepage-top-box card"
+      >
+        <div
+          class="text-center card-body"
+        >
+          <div
+            class="font-weight-bold card-title"
+          >
+            <h1
+              class="page-title"
+            >
+              Manage Your Meals With 
+              <strong
+                id="logo"
+              >
+                Fridgely
+              </strong>
+            </h1>
+            <p
+              class="tagline"
+            >
+              Effortless Meal Management: Simplify Your Kitchen with Fridgely
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="homepage-links"
+      >
+        <a
+          class="homepage-link-box"
+          href="/register"
+        >
+          Create an Account
+        </a>
+        <a
+          class="homepage-link-box"
+          href="/login"
+        >
+          Log In
+        </a>
+        <a
+          class="homepage-link-box"
+          href="/recipes"
+        >
+          Browse Recipes
+        </a>
+      </div>
+    </section>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="item-list-container"
+  >
+    <button
+      class="add-item-button"
+    >
+      Add an Item
+    </button>
+    <div>
+      <h3>
+        Bakery
+      </h3>
+      <div
+        class="item-list"
+      >
+        <li
+          class="item-item"
+        >
+          <p
+            class="item-text"
+          >
+            <strong>
+              Bread
+            </strong>
+          </p>
+          <div
+            class="item-buttons"
+          >
+            <button>
+              ←
+            </button>
+            <p
+              style="margin: 0px 10px;"
+            >
+              1 Loaf
+            </p>
+            <button>
+              →
+            </button>
+            <button>
+              Delete
+            </button>
+            <button
+              class="item-purchased-button"
+            >
+              ✓
+            </button>
+          </div>
+        </li>
+      </div>
+    </div>
+    <div>
+      <h3>
+        Dairy
+      </h3>
+      <div
+        class="item-list"
+      >
+        <li
+          class="item-item"
+        >
+          <p
+            class="item-text"
+          >
+            <strong>
+              Milk
+            </strong>
+          </p>
+          <div
+            class="item-buttons"
+          >
+            <button>
+              ←
+            </button>
+            <p
+              style="margin: 0px 10px;"
+            >
+              2 Liters
+            </p>
+            <button>
+              →
+            </button>
+            <button>
+              Delete
+            </button>
+            <button
+              class="item-purchased-button"
+            >
+              ✓
+            </button>
+          </div>
+        </li>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

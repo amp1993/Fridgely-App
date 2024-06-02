@@ -1,0 +1,46 @@
+.item-list-container {
+    max-width: 600px; /* Set the maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  /* Style for each todo item */
+  .item-item {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Style for todo item text */
+  .item-text {
+    margin: 0;
+  }
+  
+  /* Style for todo item buttons */
+  .item-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style for buttons in todo item */
+  button {
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Hover effect for buttons */
+  .item-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .item-list-container .add-item-button{
+    margin-bottom: 20px;
+  }

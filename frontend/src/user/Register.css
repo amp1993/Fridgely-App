@@ -1,0 +1,71 @@
+/* Register.css */
+
+.signup-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start of the flex container */
+    height: 100vh;
+    width: 100vw; /* Ensure it covers the full viewport width */
+    margin-top: 100px; /* Adjust this value to position the wrapper higher */
+}
+
+.register-form-container {
+    width: 500px;
+    padding: 32px; /* Adjust padding for the card */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.register-title {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+    font-size: 24px;
+    color: #333;
+}
+
+.register-form-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-label {
+    margin-top: 10px;
+}
+
+.register-field {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.register-error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+.register-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button[type='submit'] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type='submit']:hover {
+    background-color: #2980b9;
+}

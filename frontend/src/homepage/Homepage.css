@@ -1,0 +1,45 @@
+/* Homepage.css */
+
+.homepage-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;           /* Full viewport height */
+    text-align: center;      /* Center text within container */
+}
+
+.homepage-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepage-top-box {
+    margin-bottom: 20px;    
+}
+
+.homepage-links {
+    display: flex;           
+    gap: 10px;               
+}
+
+.homepage-link-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;            
+    height: 150px;           
+    margin: 10px;            
+    text-align: center;      
+    padding: 10px;
+    border: 1px solid #3498db; 
+    border-radius: 10px;     
+    color: #3498db;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.homepage-link-box:hover {
+    background-color: #3498db;
+    color: #fff;
+}

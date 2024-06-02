@@ -1,0 +1,10 @@
+
+.empty-grocery-list-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.item-buttons {
+justify-content: center;
+margin: -10px;
+}

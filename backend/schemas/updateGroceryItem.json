@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "properties": {
+      "productName": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 20
+      },
+      "categoryName": {
+        "enum": [
+            "Fruits",
+            "Vegetables",
+            "Meat",
+            "Seafood",
+            "Eggs",
+            "Milk",
+            "Cheese",
+            "Oil",
+            "Cans",
+            "Seasonings",
+            "Cereals & Granola",
+            "Condiments & Sauces",
+            "Bakery & Bread",
+            "Snacks",
+            "Beverages",
+            "Frozen Foods",
+            "Delicatessen",
+            "Misc"
+          ]
+      },
+      "inGroceryList":{
+        "type":"boolean"
+      },
+      "quantityInGroceryList": {
+        "type": "integer"
+      },
+      "inFridge":{
+        "type":"boolean"
+      },
+      "quantityInFridge": {
+        "type": "integer"
+      },
+      "unitOfMeasure": {
+          "enum": [null,"kg", "g", "lb", "oz", "liter", "ml", "pint", "quart", "gallon", "dozen", "piece"]
+        }
+  },
+  "additionalProperties": false,
+  "required": []
+}

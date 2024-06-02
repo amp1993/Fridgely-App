@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="item-list-container"
+  >
+    <button
+      class="add-item-button"
+    >
+      Add an Item
+    </button>
+    <div>
+      <h3>
+        Fruits
+      </h3>
+      <ul
+        class="item-list"
+      >
+        <li
+          class="item-item"
+        >
+          <p
+            class="item-text"
+          >
+            <strong>
+              Apple
+            </strong>
+          </p>
+          <div
+            class="item-buttons"
+          >
+            <button>
+              ←
+            </button>
+            <p
+              style="margin: 0px 10px;"
+            >
+              5 pcs
+            </p>
+            <button>
+              →
+            </button>
+            <button
+              class="delete-button"
+            >
+              Delete
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3>
+        Vegetables
+      </h3>
+      <ul
+        class="item-list"
+      >
+        <li
+          class="item-item"
+        >
+          <p
+            class="item-text"
+          >
+            <strong>
+              Carrot
+            </strong>
+          </p>
+          <div
+            class="item-buttons"
+          >
+            <button>
+              ←
+            </button>
+            <p
+              style="margin: 0px 10px;"
+            >
+              10 pcs
+            </p>
+            <button>
+              →
+            </button>
+            <button
+              class="delete-button"
+            >
+              Delete
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</DocumentFragment>
+`;

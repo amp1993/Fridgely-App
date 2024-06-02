@@ -1,0 +1,91 @@
+/* LogIn.css */
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    height: 100vh;
+    width: 100vw;
+    margin-top: 100px; 
+}
+
+.login-card {
+    width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.login-card-title {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+    font-size: 24px;
+    color: #333;
+}
+
+.login-card-body {
+    padding: 16px;
+}
+
+.login-form-div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.login-label {
+    margin-top: 10px;
+}
+
+.login-field {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+.login-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+button[type='submit'] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type='submit']:hover {
+    background-color: #2980b9;
+}
+
+.login-footer-text {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+.login-footer-text .login-signup-link {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.login-footer-text .login-signup-link:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}

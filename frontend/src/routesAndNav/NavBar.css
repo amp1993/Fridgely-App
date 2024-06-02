@@ -1,0 +1,29 @@
+
+.nav{
+    border-bottom: 2px solid ; 
+    border-color: rgba(203, 201, 201, 0.842);
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand{
+    color: #090909ff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+}
+.navbar {
+    list-style: none;
+    margin: 10px  0;
+    padding: 5;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.nav-routes{
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+
+}
