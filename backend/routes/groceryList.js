@@ -114,7 +114,7 @@ router.patch("/:username/:item", ensureCorrectUserOrAdmin, async function (req, 
 
     const existingItem = await Items.findItem(productName, username);
 
-    if (existingItem.inFridge === true) {
+    if (existingItem && existingItem.inFridge === true) {
       // If item exists in the fridge, update its quantity
 
       const updateQuantityInFridge = existingItem.quantityInFridge + quantityInFridge;
