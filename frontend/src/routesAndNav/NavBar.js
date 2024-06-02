@@ -32,7 +32,7 @@ const NavBar = ({ user, logOut }) => {
                             <NavLink className="nav-routes" to={'/profile'}>Profile</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="nav-routes" onClick={logOut}>Log Out</NavLink>
+                            <NavLink className="nav-routes" onClick={()=>logOut()}>Log Out</NavLink>
                         </NavItem>
 
                     </>
