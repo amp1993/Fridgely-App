@@ -1,5 +1,15 @@
 // Import commonGroceryItems from categories file
 const commonGroceryItems = [
+  {
+    "productName": "Carrots",
+    "categoryName": "Vegetables",
+    "unitOfMeasure": "pcs"
+  },
+  {
+    "productName": "Cheese",
+    "categoryName": "Dairy",
+    "unitOfMeasure": "kg"
+  },
     {
       "productName": "Apple",
       "categoryName": "Fruits",

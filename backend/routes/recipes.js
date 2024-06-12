@@ -59,48 +59,11 @@ router.post("/:id/:username/add-ingredients", async function (req, res, next) {
 
         const response = await RecipesApi.addIngredientsToGroceryList(id);
 
-        const itemsCreated = [];
-        const itemsInFridge = [];
-        const itemInGroceryList = [];
+        
+        // Process each ingredient by using a helper function
+        const result = await processIngredient(response, username);
 
-        // Process each ingredient
-
-        const promises = response.map(async (item) => {
-            const inGroceryList = true;
-            const inFridge = false;
-
-            // Check if the item already exists in the user's inventory
-
-            const existingItem = await Items.findItem(item.productName, username);
-
-            if (existingItem) {
-                if (existingItem.inFridge === true) {
-                    // If item is in the fridge, add it to the fridge array
-                    const existingItem = await Items.findItem(item.productName, username);
-                    itemsInFridge.push(existingItem)
-                } else if (existingItem.inGroceryList === true) {
-                    // If item is in the grocery list, update its quantity
-
-                    const updateQuantityInGroceryList = existingItem.quantityInGroceryList + item.quantity;
-                    const updatedItems = await Items.updateItem(item.productName, { quantityInGroceryList: updateQuantityInGroceryList }, username);
-                    itemInGroceryList.push(updatedItems);
-                }
-            } else {
-                const data = {
-                    productName: item.productName,
-                    categoryName: item.categoryName,
-                    quantityInGroceryList: item.quantity,
-                    unitOfMeasure: item.unitOfMeasure
-                };
-                const newAddedItems = await Items.create(data, username, inGroceryList, inFridge);
-                itemsCreated.push(newAddedItems); // Collect item data
-            }
-        });
-
-        await Promise.all(promises);
-
-        // Send items info in the response
-        res.json({ newItems: itemsCreated, updateItemsInGrocery: itemInGroceryList, itemsAlreadyInFridge: itemsInFridge });
+        res.json(result);
 
     } catch (error) {
         return next(error);
